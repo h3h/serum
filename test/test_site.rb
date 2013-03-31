@@ -64,5 +64,15 @@ class TestSite < Test::Unit::TestCase
       assert_equal files, @site.filter_entries(files)
     end
 
+    should "provide a find_by_slug method" do
+      post = @site.find_by_slug("complex")
+      assert_equal "2008-11-21-complex.textile", post.name
+    end
+
+    should "provide a find_by_slug method when the slug is overridden" do
+      post = @site.find_by_slug("gray-brains")
+      assert_equal "2013-01-02-post-excerpt.markdown", post.name
+    end
+
   end
 end

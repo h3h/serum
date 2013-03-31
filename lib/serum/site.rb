@@ -1,7 +1,7 @@
 module Serum
   class Site
     attr_accessor :config, :posts, :static_files, :exclude, :include, :source
-    attr_accessor :time, :baseurl
+    attr_accessor :time, :baseurl, :slugs_to_posts
 
     # Public: Initialize a new Site.
     #
@@ -29,6 +29,16 @@ module Serum
                              end
       self.posts           = []
       self.static_files    = []
+      self.slugs_to_posts  = {}
+    end
+
+    # Looks up a post by its slug.
+    #
+    # slug - A String denoting the slug for the post.
+    #
+    # Returns the found Post or nil.
+    def find_by_slug(slug)
+      self.slugs_to_posts[slug]
     end
 
     # Recursively traverse directories to find posts and static files
@@ -73,6 +83,7 @@ module Serum
 
           if post.published && post.date <= self.time
             self.posts << post
+            self.slugs_to_posts[post.slug] = post
           end
         end
       end
