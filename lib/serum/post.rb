@@ -58,6 +58,10 @@ module Serum
       else
         self.published = true
       end
+
+      if self.data.has_key?('slug')
+        self.slug = self.data['slug']
+      end
     end
 
     # Read the YAML frontmatter.

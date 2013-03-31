@@ -1,6 +1,7 @@
 ---
 layout: ~
 title:  Post Excerpt
+slug: "gray-brains"
 ---
 
 First paragraph with [link ref][link].

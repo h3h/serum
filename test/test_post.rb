@@ -65,6 +65,15 @@ class TestPost < Test::Unit::TestCase
         end
       end
 
+      context "with slug specified in YAML front matter" do
+        setup do
+          @post = setup_post("2013-01-02-post-excerpt.markdown")
+        end
+        should "allow the slug to be overridden by the YAML" do
+          assert_equal("gray-brains", @post.slug)
+        end
+      end
+
       should "read yaml front-matter" do
         @post.read_yaml(@source, @real_file)
 
