@@ -31,7 +31,7 @@ require 'serum/errors'
 SafeYAML::OPTIONS[:suppress_warnings] = true
 
 module Serum
-  VERSION = '0.1.0'
+  VERSION = '0.2.0'
 
   # Default options.
   # Strings rather than symbols are used for compatability with YAML.

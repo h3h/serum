@@ -4,7 +4,7 @@ Gem::Specification.new do |s|
   s.rubygems_version = '1.3.5'
 
   s.name              = 'serum'
-  s.version           = '0.1.0'
+  s.version           = '0.2.0'
   s.license           = 'MIT'
   s.date              = '2013-03-30'
   s.rubyforge_project = 'serum'
