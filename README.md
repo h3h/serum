@@ -43,11 +43,11 @@ a simple directory of posts.
 
 Maybe more aptly named "deleter" considering this project's origin.
 
-[Brad Fults](http://github.com/h3h) ([bfults@gmail.com][])
+[Brad Fults](http://github.com/h3h) ([bfults@gmail.com](mailto:bfults@gmail.com))
 
 ## Acknowledgements
 
-Serum is based entirely on [Jekyll](http://jekyllrb.com/) from Tomm Preston-Werner.
+Serum is based entirely on [Jekyll](http://jekyllrb.com/) from Tom Preston-Werner.
 Thank you, Tom.
 
 ## License
