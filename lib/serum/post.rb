@@ -76,6 +76,7 @@ module Serum
 
         if content =~ /\A(---\s*\n.*?\n?)^(---\s*$\n?)/m
           self.data = YAML.safe_load($1)
+          self.content = $' # everything after the last match
         end
       rescue => e
         puts "Error reading file #{File.join(base, name)}: #{e.message}"
