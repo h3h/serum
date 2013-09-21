@@ -4,9 +4,9 @@ Gem::Specification.new do |s|
   s.rubygems_version = '1.3.5'
 
   s.name              = 'serum'
-  s.version           = '0.3.0'
+  s.version           = '0.3.2'
   s.license           = 'MIT'
-  s.date              = '2013-05-04'
+  s.date              = '2013-09-21'
   s.rubyforge_project = 'serum'
 
   s.summary     = "A simple object model on static posts with YAML front matter."
@@ -23,7 +23,7 @@ Gem::Specification.new do |s|
   s.rdoc_options = ["--charset=UTF-8"]
   s.extra_rdoc_files = %w[README.md LICENSE]
 
-  s.add_runtime_dependency('safe_yaml', "~> 0.7.0")
+  s.add_runtime_dependency('safe_yaml', ">= 0.7")
 
   s.add_development_dependency('rake', "~> 10.0.3")
   s.add_development_dependency('rdoc', "~> 3.11")
