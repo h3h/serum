@@ -1,6 +1,6 @@
 # Serum
 
-Serum is a simple object model on static posts with YAML front matter.
+Serum is a simple object model on static posts with [YAML front matter](http://jekyllrb.com/docs/frontmatter/), like [Jekyll](http://jekyllrb.com/).
 
 ## Usage
 
